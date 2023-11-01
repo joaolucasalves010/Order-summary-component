@@ -1,0 +1,143 @@
+/* Configurando Site */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url(./img/pattern-background-desktop.svg);
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+.container p {
+    font-size: 16px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 370px;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.img-container img {
+    border-radius: 10px;
+}
+
+/* Descrição do container */
+.description {
+    text-align: center;
+}
+
+.description h1 {
+    margin-bottom: 15px;
+    font-size: 27px;
+    color: #222;
+}
+
+.description p {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+    line-height: 27px;
+}
+
+.plan {
+    display: flex;
+    width: 80%;
+    height: 55px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+
+}
+
+.plan a {
+    right: 2rem;
+    margin-top: 15px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 500;
+    position: absolute;
+    font-size: 15px;
+}
+
+.payment {
+    text-align: center;
+}
+
+.payment button[type="submit"] {
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 500;
+    padding: 10px 2.5rem;
+    border: none;
+    width: 87%;
+    border-radius: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.price h2 {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.9);
+    margin-left: 10px;
+}
+
+.price p {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+
+.order {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.order a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.payment button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: hsl(225, 100%, 94%);
+    transition: .3s;
+    color: hsl(245, 75%, 52%);
+}
+
+.order a:hover {
+    transition: .5s;
+    color: hsl(245, 75%, 52%);
+}
+
+/* Responsividade  */
+
+@media (max-width: 375px) {
+    .main-container {
+        width: 90%;
+    }
+
+
+    .price h2 {
+        font-size: 14px;
+    }
+}
